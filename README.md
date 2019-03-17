@@ -1,5 +1,47 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Create this project
+
+### npx create-react-app my-app --typescript
+
+Create a project along with Typescript
+
+### npm install redux react-redux redux-thunk 
+
+## npm install --save @types/react-redux
+
+We will use redux to manage state (Provider -> store -> createStore -> combineReducers).
+
+We also use container component to connect presentational component to Redux. "connect", "mapStateToProps", "mapDispatchToProps"
+
+A explaination of JSX in React. 
+
+Babel compiles JSX down to React.createElement() call.
+
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+
+React.createElement() create an object like this:
+
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+
+React will read this object and use them to construct the DOM.
+
 ## Available Scripts
 
 In the project directory, you can run:

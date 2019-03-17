@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BookListContainer  from  "./container/BookListContainer";
+import AddBook from "./container/AddBook";
+//import BookList from "./component/BookList"; 
 
 class App extends Component {
   render() {
@@ -17,8 +20,12 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn React 1
           </a>
+          <div>
+            <BookListContainer />
+            <AddBook />
+          </div>
         </header>
       </div>
     );
