@@ -17,7 +17,7 @@ We also use container component to connect presentational component to Redux. "c
 A explaination of JSX in React. 
 
 Babel compiles JSX down to React.createElement() call.
-
+~~~~
 const element = (
   <h1 className="greeting">
     Hello, world!
@@ -29,7 +29,7 @@ const element = React.createElement(
   {className: 'greeting'},
   'Hello, world!'
 );
-
+~~~~
 React.createElement() create an object like this:
 
 const element = {
