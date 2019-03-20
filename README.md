@@ -14,6 +14,19 @@ We will use redux to manage state (Provider -> store -> createStore -> combineRe
 
 We also use container component to connect presentational component to Redux. "connect", "mapStateToProps", "mapDispatchToProps"
 
+We choose Formik https://github.com/jaredpalmer/formik as form submit library.
+
+There are some popular form libraries at that time. For example, 
+React Redux Form https://github.com/davidkpiano/react-redux-form
+Redux Form https://github.com/erikras/redux-form
+React Final Form https://github.com/final-form/react-final-form
+
+Formik is the winner of balancing easy usage and performance at that time.
+npm install formik --save
+
+We also use yup as validator to work with Formik. https://github.com/jquense/yup
+npm install yup @types/yup 
+
 A explaination of JSX in React. 
 
 Babel compiles JSX down to React.createElement() call.

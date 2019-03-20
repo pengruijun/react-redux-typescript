@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BookListContainer  from  "./container/BookListContainer";
-import AddBook from "./container/AddBook";
-//import BookList from "./component/BookList"; 
+import AddBookSimple from "./container/AddBookSimple";
+import AddBookFormik from './container/AddBookFormik';
 
 class App extends Component {
   render() {
@@ -24,7 +24,8 @@ class App extends Component {
           </a>
           <div>
             <BookListContainer />
-            <AddBook />
+            <AddBookSimple />
+            <AddBookFormik />
           </div>
         </header>
       </div>
