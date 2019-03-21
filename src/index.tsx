@@ -10,17 +10,20 @@ import { rootReducer } from './reducer';
 
 const preloadedState : IBooksReduxStore = {
     books: [
-        {
+        { 
+            id: 0,
             title: "harry bolet",
             author: "unkonwn",
             price: 12
         },
         {
+            id: 1,
             title: "asp.net core",
             author: "john sketch",
             price: 25
         },
     ],
+    selectedId: -1,
 }
 
 

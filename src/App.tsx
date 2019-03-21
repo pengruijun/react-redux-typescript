@@ -1,33 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 import BookListContainer  from  "./container/BookListContainer";
 import AddBookSimple from "./container/AddBookSimple";
 import AddBookFormik from './container/AddBookFormik';
+import BookContainer from './container/BookContainer';
+import BookOrAdd from './container/BookOrAdd';
+import AddBookLink from "./container/AddBookLink";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React 1
-          </a>
-          <div>
+          <div style={{float: "left"}}>
             <BookListContainer />
-            <AddBookSimple />
-            <AddBookFormik />
+            <AddBookLink />
           </div>
-        </header>
+          <div>
+            {/* <AddBookSimple /> */}
+            <BookOrAdd />
+          </div>
       </div>
     );
   }
