@@ -27,6 +27,10 @@ npm install formik --save
 We also use yup as validator to work with Formik. https://github.com/jquense/yup
 npm install yup @types/yup 
 
+As a SPA, we will use "React Router" to route our application
+
+npm install --save react-router-dom
+
 A explaination of JSX in React. 
 
 Babel compiles JSX down to React.createElement() call.

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { IBook, IBooksReduxStore } from "../type";
+import { Link } from "react-router-dom";
 
 const BookList = (props: any) => {
     return (
@@ -7,12 +8,12 @@ const BookList = (props: any) => {
             <ul>
                 {
                     props.books.map((book: IBook) => (
-                    <li key={book.id} onClick={() => props.handleSelect(book.id)} >
-                        
-                            {book.title + " " + book.author + " $" + book.price}
-                        
-                    </li>
-                ))
+                        <li key={book.id}>
+                            <Link to={`/book/${book.id}`}>
+                                {book.title}
+                            </Link>  
+                        </li>
+                    ))
                 }
             </ul>
         </div>

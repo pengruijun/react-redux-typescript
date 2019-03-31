@@ -1,16 +1,22 @@
 import React from "react";
 import { link } from "../action";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
-const AddBookLink = (props: any) => {
+const AddBookLink = () => {
     return (
-        <a href="#" onClick={props.onAddLink} >Add Book</a>
+        <div>
+            <Link to="/add">Add Book</Link>
+        </div>
     );
 }
 
-const mapDispatchToProps = (dispatch: any) => ({
-    onAddLink: () => dispatch(link()),
-});
+// const mapDispatchToProps = (dispatch: any) => ({
+//     onAddLink: (e: Event) => {
+//         e.preventDefault();
+//         dispatch(link())
+//     },
+// });
 
-export default connect(null, mapDispatchToProps)(AddBookLink);
-
+// export default connect(null, mapDispatchToProps)(AddBookLink);
+export default AddBookLink;

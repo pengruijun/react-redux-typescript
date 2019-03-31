@@ -8,10 +8,10 @@ const mapStateToProps = (state: IBooksReduxStore) => ({
     books: state.books,
 });
 
-const mapDispatchToProps = (dispatch: any) => ({
-    handleSelect: (id: number) => {
-        dispatch(show(id));
-    },
-});
+// const mapDispatchToProps = (dispatch: any) => ({
+//     handleSelect: (id: number) => {
+//         dispatch(show(id));
+//     },
+// });
 
-export default connect(mapStateToProps, mapDispatchToProps)(BookList);
+export default connect(mapStateToProps)(BookList);
