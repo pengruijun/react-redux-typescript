@@ -31,6 +31,8 @@ As a SPA, we will use "React Router" to route our application
 
 npm install --save react-router-dom
 
+For async action feature, we will use Redux-Thunk middleware
+
 A explaination of JSX in React. 
 
 Babel compiles JSX down to React.createElement() call.
