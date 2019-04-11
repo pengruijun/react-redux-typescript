@@ -31,7 +31,11 @@ As a SPA, we will use "React Router" to route our application
 
 npm install --save react-router-dom
 
-For async action feature, we will use Redux-Thunk middleware
+For async action feature, we will use Redux-Thunk middleware. Instead of returning action object from action creator, return a function, which can do anything inside.
+
+we also evaluate Promise vs async/await. Fetch vs juqery ajax/axios.
+
+Example: we will use "axios" to request Adelaide current weather from "OpenWeatherMap" API.
 
 A explaination of JSX in React. 
 
